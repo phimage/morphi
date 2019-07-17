@@ -1,4 +1,4 @@
-# Morphi
+# Morphi - Μορφ
 
 Morphi provides some additional shapes for SwiftUI.
 
