@@ -2,6 +2,8 @@
 
 Morphi provides some additional shapes for SwiftUI.
 
+<img align="left" hspace="20" src="/Example/Screen.png" alt="Screen shot" height="300">
+
 - [x] `Triangle`
 - [x] `Parallelogram`
 - [x] `Polygon`
@@ -15,10 +17,12 @@ Morphi provides some additional shapes for SwiftUI.
 - [ ] `Ring`
 - [ ] `Gear`
 
-![Screen shot](/Example/Screen.png)
+## Example
 
 ```swift
  Heart().fill(Color.red).frame(width: 100, height: 100)
 ```
 
-For `UIKit` version with `UIBezierPath` see [IBAnimatable framework](project.https://github.com/IBAnimatable/IBAnimatable/)
+## UIKit
+
+For `UIKit` version with `UIBezierPath` see [IBAnimatable framework](https://github.com/IBAnimatable/IBAnimatable/)
