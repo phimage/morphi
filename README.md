@@ -21,6 +21,8 @@ Morphi provides some additional shapes for SwiftUI.
 
 ```swift
  Heart().fill(Color.red).frame(width: 100, height: 100)
+ 
+ aView.clipShape(Drop())
 ```
 
 ## UIKit
