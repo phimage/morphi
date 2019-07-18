@@ -2,7 +2,7 @@
 
 Morphi provides some additional shapes for SwiftUI.
 
-<img align="left" hspace="20" src="/Example/Screen.png" alt="Screen shot" height="250">
+<img align="left" hspace="20" src="/Example/Screen.png" alt="Screen shot" height="333">
 
 - [x] `Triangle`
 - [x] `Parallelogram(topLeftAngle)`
