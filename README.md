@@ -2,20 +2,20 @@
 
 Morphi provides some additional shapes for SwiftUI.
 
-<img align="left" hspace="20" src="/Example/Screen.png" alt="Screen shot" height="300">
+<img align="left" hspace="20" src="/Example/Screen.png" alt="Screen shot" height="250">
 
 - [x] `Triangle`
-- [x] `Parallelogram`
-- [x] `Polygon`
+- [x] `Parallelogram(topLeftAngle)`
+- [x] `Polygon(sides)`
 - [x] `Heart`
-- [x] `Moon`
-- [x] `PlusSign`
-- [x] `Star`
-- [x] `Wave`
-- [x] `SuperEllipse`
+- [x] `Moon(angle)`
+- [x] `PlusSign(width)`
+- [x] `Star(points)`
+- [x] `Wave(isUp, width, offset)`
+- [x] `SuperEllipse(n)`
 - [x] `Drop`
-- [ ] `Ring`
-- [ ] `Gear`
+- [x] `Ring(radius)` (to use with a `FillStyle` with `eoFill` equal to `true`)
+- [x] `Gear(radius, cogs)` (to use with a `FillStyle` with `eoFill` equal to `true`)
 
 ## Example
 

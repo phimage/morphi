@@ -12,7 +12,7 @@ import SwiftUI
 public struct Star: Shape {
 
     public let points: Int
-    public let borderWidth: CGFloat
+    public let borderWidth: Length
 
     /**
      Create a star shape with provided points.

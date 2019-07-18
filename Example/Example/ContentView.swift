@@ -9,64 +9,63 @@
 import SwiftUI
 import Morphi
 
-struct ContentView : View {
-    var color: Color = .red
+extension FillStyle {
+    static let eoFill = FillStyle(eoFill: true, antialiased: true)
+}
+
+struct ShapeIdentifiable<S> : Identifiable{
+
+    var name: String
+    var shape: S
+    var id: String {
+        return self.name + "\(self.shape)"
+    }
+}
+
+struct ShapesView<S: Shape> : View {
+    var name: String
+    var shapes: [S]
+    var fillColor: Color
+    var fillStyle: FillStyle
     
+    init(name: String, fillColor: Color = .red, fillStyle: FillStyle = FillStyle(), shapes: [S]) {
+        self.name = name
+        self.fillStyle = fillStyle
+        self.fillColor = fillColor
+        self.shapes = shapes
+    }
+
+    var body: some View {
+        VStack {
+            HStack {
+                ForEach(shapes.map { ShapeIdentifiable(name: name, shape: $0)}) { shape in
+                    return shape.shape.fill(self.fillColor, style: self.fillStyle).frame(width: 100, height: 100)
+                }
+            }
+            Text(name).font(.largeTitle)
+        }
+    }
+}
+
+struct ContentView : View {
+
     var body: some View {
         ScrollView {
             VStack {
-                Text("Heart").font(.largeTitle)
-                HStack {
-                    Heart().fill(color).frame(width: 100, height: 100)
-                }
-                Text("Drop").font(.largeTitle)
-                HStack {
-                    Drop().fill(Color.red).frame(width: 100, height: 100)
-                }
-                Text("Triangle").font(.largeTitle)
-                Triangle().fill(color).frame(width: 100, height: 100)
-                
-                Text("Polygon").font(.largeTitle)
-                HStack {
-                    Polygon(sides: 5).fill(Color.red).frame(width: 100, height: 100)
-                    Polygon(sides: 6).fill(Color.red).frame(width: 100, height: 100)
-                    Polygon(sides: 10).fill(Color.red).frame(width: 100, height: 100)
-                }
-                Text("Star").font(.largeTitle)
-                HStack { Star(points: 4).fill(color).frame(width: 100, height: 100)
-                    Star(points: 5).fill(color).frame(width: 100, height: 100)
-                    Star(points: 8).fill(color).frame(width: 100, height: 100)
-                }
+                ShapesView(name: "Heart", shapes: [Heart()])
+                ShapesView(name: "Drop", fillColor: .blue, shapes: [Drop()])
+                ShapesView(name: "Ring", fillColor: .yellow, fillStyle: .eoFill, shapes: [Ring(radius: 20), Ring(radius: 10)])
+                ShapesView(name: "Gear", fillColor: .gray, fillStyle: .eoFill, shapes: [Gear(radius: 20, cogs: 3), Gear(radius: 20, cogs: 8), Gear(radius: 10, cogs: 12)])
+                ShapesView(name: "Polygon", shapes: [Polygon(sides: 5), Polygon(sides: 6), Polygon(sides: 10)])
+                ShapesView(name: "Triangle", shapes: [Triangle()])
+                ShapesView(name: "Star", fillColor: .yellow, shapes: [Star(points: 4), Star(points: 5), Star(points: 8)])
             }
             VStack {
-                Text("Parallelogram").font(.largeTitle)
-                HStack {
-                    Parallelogram(topLeftAngle: Angle(degrees: 10)).fill(Color.red).frame(width: 100, height: 100)
-                    Parallelogram(topLeftAngle: Angle(degrees: 50)).fill(Color.red).frame(width: 100, height: 100)
-                }
-                Text("Wave").font(.largeTitle)
-                HStack {
-                    Wave(isUp: true, width: 50, offset: 10).fill(color).frame(width: 100, height: 100)
-                    Wave(isUp: true, width: 10, offset: 10).fill(color).frame(width: 100, height: 100)
-                }
-            }
-            VStack {
-                Text("PlusSign").font(.largeTitle)
-                HStack {
-                    PlusSign(width: 10).fill(Color.red).frame(width: 100, height: 100)
-                    PlusSign(width: 30).fill(Color.red).frame(width: 100, height: 100)
-                }
-                Text("SuperEllipse").font(.largeTitle)
-                HStack { SuperEllipse().fill(Color.red).frame(width: 100, height: 100)
-                    SuperEllipse(n: 1).fill(Color.red).frame(width: 100, height: 100)
-                    SuperEllipse(n: 0.5).fill(Color.red).frame(width: 100, height: 100)
-                }
-                
-            }
-            Text("Moon").font(.largeTitle)
-            HStack {
-                Moon(angle: Angle(degrees: 130)).fill(Color.red).frame(width: 100, height: 100)
-                Moon(angle: Angle(degrees: 90)).fill(Color.red).frame(width: 100, height: 100)
+                ShapesView(name: "Parallelogram", shapes: [Parallelogram(topLeftAngle: Angle(degrees: 70)), Parallelogram(topLeftAngle: Angle(degrees: 80))])
+                ShapesView(name: "Wave", fillColor: .blue, shapes: [ Wave(isUp: true, width: 50, offset: 10), Wave(isUp: true, width: 10, offset: 10)])
+                ShapesView(name: "PlusSign", shapes: [PlusSign(width: 10), PlusSign(width: 30)])
+                ShapesView(name: "SuperEllipse", shapes: [SuperEllipse(), SuperEllipse(n: 1), SuperEllipse(n: 0.5)])
+                ShapesView(name: "Moon", fillColor: .yellow, shapes: [Moon(angle: Angle(degrees: 130)), Moon(angle: Angle(degrees: 90)), Moon(angle: Angle(degrees: 0))])
             }
         }
     }

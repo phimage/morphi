@@ -23,6 +23,8 @@
 		7E03C35D22DF970F00996288 /* PlusSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C35022DF970E00996288 /* PlusSign.swift */; };
 		7E03C35E22DF970F00996288 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C35122DF970E00996288 /* Triangle.swift */; };
 		7E03C35F22DF970F00996288 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C35222DF970E00996288 /* Star.swift */; };
+		7EB0D6B122E0617700B900C0 /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0D6B022E0617700B900C0 /* Gear.swift */; };
+		7EB0D6B322E0618000B900C0 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0D6B222E0618000B900C0 /* Ring.swift */; };
 		7EE235DB22DF483C00625B58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE235DA22DF483C00625B58 /* AppDelegate.swift */; };
 		7EE235DD22DF483C00625B58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE235DC22DF483C00625B58 /* SceneDelegate.swift */; };
 		7EE235DF22DF483C00625B58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE235DE22DF483C00625B58 /* ContentView.swift */; };
@@ -79,6 +81,9 @@
 		7E03C35022DF970E00996288 /* PlusSign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusSign.swift; sourceTree = "<group>"; };
 		7E03C35122DF970E00996288 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		7E03C35222DF970E00996288 /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		7EB0D6B022E0617700B900C0 /* Gear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gear.swift; sourceTree = "<group>"; };
+		7EB0D6B222E0618000B900C0 /* Ring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		7EB0D6B422E0642800B900C0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7EE235D722DF483C00625B58 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE235DA22DF483C00625B58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EE235DC22DF483C00625B58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +155,8 @@
 				7E03C35122DF970E00996288 /* Triangle.swift */,
 				7E03C35222DF970E00996288 /* Star.swift */,
 				7E03C34522DF970E00996288 /* Moon.swift */,
+				7EB0D6B022E0617700B900C0 /* Gear.swift */,
+				7EB0D6B222E0618000B900C0 /* Ring.swift */,
 			);
 			path = Morphi;
 			sourceTree = "<group>";
@@ -166,6 +173,7 @@
 		7EE235CE22DF483C00625B58 = {
 			isa = PBXGroup;
 			children = (
+				7EB0D6B422E0642800B900C0 /* README.md */,
 				7EE235D922DF483C00625B58 /* Example */,
 				7E03C33722DF96E900996288 /* Morphi */,
 				7EE235D822DF483C00625B58 /* Products */,
@@ -347,12 +355,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EB0D6B122E0617700B900C0 /* Gear.swift in Sources */,
 				7E03C35D22DF970F00996288 /* PlusSign.swift in Sources */,
 				7E03C35922DF970F00996288 /* Parallelogram.swift in Sources */,
 				7E03C35822DF970F00996288 /* Wave.swift in Sources */,
 				7E03C35E22DF970F00996288 /* Triangle.swift in Sources */,
 				7E03C35A22DF970F00996288 /* Heart.swift in Sources */,
 				7E03C35F22DF970F00996288 /* Star.swift in Sources */,
+				7EB0D6B322E0618000B900C0 /* Ring.swift in Sources */,
 				7E03C35422DF970F00996288 /* Angle+Morphi.swift in Sources */,
 				7E03C35722DF970F00996288 /* SuperEllipse.swift in Sources */,
 				7E03C35B22DF970F00996288 /* Polygon.swift in Sources */,
