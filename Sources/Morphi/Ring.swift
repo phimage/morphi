@@ -2,7 +2,7 @@
 //  Ring.swift
 //  Morphi
 //
-//  Created by 4D on 18/07/2019.
+//  Created by phimage on 18/07/2019.
 //  Copyright © 2019 phimage. All rights reserved.
 //
 

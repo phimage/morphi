@@ -1,6 +1,10 @@
 # Morphi - Μορφ
 
-Morphi provides some additional shapes for SwiftUI.
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://mit-license.org)
+[![Platform](http://img.shields.io/badge/platform-macos_ios_osx_tvos-lightgrey.svg?style=flat)](https://developer.apple.com/resources/)
+[![Language](http://img.shields.io/badge/language-swift-orange.svg?style=flat)](https://developer.apple.com/swift)
+
+Morphi provides some additional [shapes](https://developer.apple.com/documentation/swiftui/shape) for SwiftUI.
 
 <img align="left" hspace="20" src="/Example/Screen.png" alt="Screen shot" height="333">
 
@@ -17,13 +21,31 @@ Morphi provides some additional shapes for SwiftUI.
 - [x] `Ring(radius)` (to use with a `FillStyle` with `eoFill` equal to `true`)
 - [x] `Gear(radius, cogs)` (to use with a `FillStyle` with `eoFill` equal to `true`)
 
-## Example
+## Examples
+
+### Create a shape view
+
+Like any other shapes just initialize it.
 
 ```swift
  Heart().fill(Color.red).frame(width: 100, height: 100)
+ ```
  
+ <img  src="/Example/Heart.png" alt="Heart" height="128">
+ 
+ ### Mask an existing view
+ 
+ ```swift
  aView.clipShape(Drop())
+ // or using static member
+ aView.clipShape(.drop)
 ```
+
+You can even do it an other shape.
+```swift
+Polygon(sides: 6).fill(Color.red).clipShape(.drop)
+```
+<img  src="/Example/PolygonDrop.png" alt="PolygonDrop" height="128">
 
 ## UIKit
 

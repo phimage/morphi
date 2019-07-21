@@ -13,7 +13,7 @@
 		7E03C35322DF970F00996288 /* Moon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C34522DF970E00996288 /* Moon.swift */; };
 		7E03C35422DF970F00996288 /* Angle+Morphi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C34722DF970E00996288 /* Angle+Morphi.swift */; };
 		7E03C35522DF970F00996288 /* CGRect+Morphi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C34822DF970E00996288 /* CGRect+Morphi.swift */; };
-		7E03C35622DF970F00996288 /* Morphi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C34922DF970E00996288 /* Morphi.swift */; };
+		7E03C35622DF970F00996288 /* Shape+StaticMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C34922DF970E00996288 /* Shape+StaticMember.swift */; };
 		7E03C35722DF970F00996288 /* SuperEllipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C34A22DF970E00996288 /* SuperEllipse.swift */; };
 		7E03C35822DF970F00996288 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C34B22DF970E00996288 /* Wave.swift */; };
 		7E03C35922DF970F00996288 /* Parallelogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C34C22DF970E00996288 /* Parallelogram.swift */; };
@@ -71,7 +71,7 @@
 		7E03C34522DF970E00996288 /* Moon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moon.swift; sourceTree = "<group>"; };
 		7E03C34722DF970E00996288 /* Angle+Morphi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Angle+Morphi.swift"; sourceTree = "<group>"; };
 		7E03C34822DF970E00996288 /* CGRect+Morphi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Morphi.swift"; sourceTree = "<group>"; };
-		7E03C34922DF970E00996288 /* Morphi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Morphi.swift; sourceTree = "<group>"; };
+		7E03C34922DF970E00996288 /* Shape+StaticMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shape+StaticMember.swift"; sourceTree = "<group>"; };
 		7E03C34A22DF970E00996288 /* SuperEllipse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperEllipse.swift; sourceTree = "<group>"; };
 		7E03C34B22DF970E00996288 /* Wave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 		7E03C34C22DF970E00996288 /* Parallelogram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parallelogram.swift; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				7E03C34622DF970E00996288 /* Extension */,
-				7E03C34922DF970E00996288 /* Morphi.swift */,
+				7E03C34922DF970E00996288 /* Shape+StaticMember.swift */,
 				7E03C34A22DF970E00996288 /* SuperEllipse.swift */,
 				7E03C34B22DF970E00996288 /* Wave.swift */,
 				7E03C34C22DF970E00996288 /* Parallelogram.swift */,
@@ -367,7 +367,7 @@
 				7E03C35722DF970F00996288 /* SuperEllipse.swift in Sources */,
 				7E03C35B22DF970F00996288 /* Polygon.swift in Sources */,
 				7E03C35522DF970F00996288 /* CGRect+Morphi.swift in Sources */,
-				7E03C35622DF970F00996288 /* Morphi.swift in Sources */,
+				7E03C35622DF970F00996288 /* Shape+StaticMember.swift in Sources */,
 				7E03C35C22DF970F00996288 /* Drop.swift in Sources */,
 				7E03C35322DF970F00996288 /* Moon.swift in Sources */,
 			);

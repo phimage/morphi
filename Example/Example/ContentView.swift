@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Example
 //
-//  Created by 4D on 17/07/2019.
+//  Created by phimage on 17/07/2019.
 //  Copyright © 2019 phimage. All rights reserved.
 //
 
@@ -39,7 +39,7 @@ struct ShapesView<S: Shape> : View {
         VStack {
             HStack {
                 ForEach(shapes.map { ShapeIdentifiable(name: name, shape: $0)}) { shape in
-                    return shape.shape.fill(self.fillColor, style: self.fillStyle).frame(width: 100, height: 100)
+                    return shape.shape.fill(self.fillColor, style: self.fillStyle).frame(width: 100, height: 100).clipShape(.drop)
                 }
             }
             Text(name).font(.largeTitle)
@@ -75,6 +75,16 @@ struct ContentView : View {
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+#endif
+
+#if !(swift(>=5.2))
+import UIKit
+extension UIColor {
+    
+    static var label: UIColor {
+        return .black
     }
 }
 #endif
