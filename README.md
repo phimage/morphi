@@ -41,7 +41,7 @@ Like any other shapes just initialize it.
  aView.clipShape(.drop)
 ```
 
-You can even do it on an other shape.
+You can even do it on another shape.
 ```swift
 Polygon(sides: 6).fill(Color.red).clipShape(.drop)
 ```
