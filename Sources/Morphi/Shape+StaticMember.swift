@@ -24,10 +24,10 @@ public extension StaticMember where Base: Shape {
     static var capsule: Capsule.Member { return .init(.init()) }
     static var ellipse: Ellipse.Member { return .init(.init()) }
     static var rectanble: Rectangle.Member { return .init(.init()) }
-    static func roundedRectanble(cornerSize: CGSize, style: RoundedCornerStyle = .circular) -> RoundedRectangle.Member {
+    static func roundedRectangle(cornerSize: CGSize, style: RoundedCornerStyle = .circular) -> RoundedRectangle.Member {
         return .init(.init(cornerSize: cornerSize, style: style))
     }
-    static func roundedRectanble(cornerRadius: Length, style: RoundedCornerStyle = .circular) -> RoundedRectangle.Member {
+    static func roundedRectangle(cornerRadius: Length, style: RoundedCornerStyle = .circular) -> RoundedRectangle.Member {
         return .init(.init(cornerRadius: cornerRadius, style: style))
     }
 
