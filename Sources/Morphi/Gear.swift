@@ -13,12 +13,12 @@ import SwiftUI
 public struct Gear: Shape {
     
     /// The radius of the gear ring.
-    public var radius: Length
+    public var radius: CGFloat
     
     /// Number of cogs. Must be more than 2.
     public var cogs: Int
 
-    public init(radius: Length, cogs: Int) {
+    public init(radius: CGFloat, cogs: Int) {
         self.radius = radius
         self.cogs = cogs
     }

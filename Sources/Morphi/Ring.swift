@@ -13,9 +13,9 @@ import SwiftUI
 public struct Ring: Shape {
 
     /// The raidus of the ring.
-    public var radius: Length
+    public var radius: CGFloat
 
-    public init(radius: Length) {
+    public init(radius: CGFloat) {
         self.radius = radius
     }
 

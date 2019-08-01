@@ -39,7 +39,7 @@ struct ShapesView<S: Shape> : View {
         VStack {
             HStack {
                 ForEach(shapes.map { ShapeIdentifiable(name: name, shape: $0)}) { shape in
-                    return shape.shape.fill(self.fillColor, style: self.fillStyle).frame(width: 100, height: 100).clipShape(.drop)
+                    return shape.shape.fill(self.fillColor, style: self.fillStyle).frame(width: 100, height: 100) // .clipShape(.drop)
                 }
             }
             Text(name).font(.largeTitle)
@@ -66,6 +66,10 @@ struct ContentView : View {
                 ShapesView(name: "PlusSign", shapes: [PlusSign(width: 10), PlusSign(width: 30)])
                 ShapesView(name: "SuperEllipse", shapes: [SuperEllipse(), SuperEllipse(n: 1), SuperEllipse(n: 0.5)])
                 ShapesView(name: "Moon", fillColor: .yellow, shapes: [Moon(angle: Angle(degrees: 130)), Moon(angle: Angle(degrees: 90)), Moon(angle: Angle(degrees: 0))])
+            }
+            VStack {
+                ShapesView(name: "Circle", shapes: [Circle()])
+                ShapesView(name: "Rectangle", shapes: [Rectangle()])
             }
         }
     }

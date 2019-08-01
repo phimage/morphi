@@ -12,10 +12,10 @@ import SwiftUI
 public struct Wave: Shape {
 
     public var isUp: Bool
-    public var width: Length
-    public var offset: Length
+    public var width: CGFloat
+    public var offset: CGFloat
 
-    public init(isUp: Bool, width: Length, offset: Length) {
+    public init(isUp: Bool, width: CGFloat, offset: CGFloat) {
         self.isUp = isUp
         self.width = width
         self.offset = offset
