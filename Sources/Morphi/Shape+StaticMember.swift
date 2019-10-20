@@ -18,8 +18,8 @@ public struct ShapeMember<Base: Shape> { // old deprecated StaticMember, is ther
 }
 
 public extension View {
-    
-    func clipShape<S>(_ shape: S.Member, style: FillStyle = FillStyle()) -> some View where S : Shape {
+
+    func clipShape<S>(_ shape: S.Member, style: FillStyle = FillStyle()) -> some View where S: Shape {
         return clipShape(shape.base, style: style)
     }
 }

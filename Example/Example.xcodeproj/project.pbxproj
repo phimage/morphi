@@ -31,6 +31,7 @@
 		7EE235E122DF483D00625B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EE235E022DF483D00625B58 /* Assets.xcassets */; };
 		7EE235E422DF483D00625B58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EE235E322DF483D00625B58 /* Preview Assets.xcassets */; };
 		7EE235E722DF483D00625B58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE235E522DF483D00625B58 /* LaunchScreen.storyboard */; };
+		C4FD8CAC235CF286001DE5E9 /* RoundedPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FD8CAB235CF286001DE5E9 /* RoundedPolygon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		7EE235E622DF483D00625B58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EE235E822DF483D00625B58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EE235ED22DF483D00625B58 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4FD8CAB235CF286001DE5E9 /* RoundedPolygon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedPolygon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				7E03C34C22DF970E00996288 /* Parallelogram.swift */,
 				7E03C34D22DF970E00996288 /* Heart.swift */,
 				7E03C34E22DF970E00996288 /* Polygon.swift */,
+				C4FD8CAB235CF286001DE5E9 /* RoundedPolygon.swift */,
 				7E03C34F22DF970E00996288 /* Drop.swift */,
 				7E03C35022DF970E00996288 /* PlusSign.swift */,
 				7E03C35122DF970E00996288 /* Triangle.swift */,
@@ -363,6 +366,7 @@
 				7E03C35A22DF970F00996288 /* Heart.swift in Sources */,
 				7E03C35F22DF970F00996288 /* Star.swift in Sources */,
 				7EB0D6B322E0618000B900C0 /* Ring.swift in Sources */,
+				C4FD8CAC235CF286001DE5E9 /* RoundedPolygon.swift in Sources */,
 				7E03C35422DF970F00996288 /* Angle+Morphi.swift in Sources */,
 				7E03C35722DF970F00996288 /* SuperEllipse.swift in Sources */,
 				7E03C35B22DF970F00996288 /* Polygon.swift in Sources */,

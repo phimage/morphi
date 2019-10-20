@@ -27,15 +27,14 @@ public struct Ring: Shape {
         var path = Path()
         let center = rect.center
         let (innerRadius, outerRadius) = rect.radii(for: radius)
-        
+
         path.addArc(center: .zero, radius: innerRadius, startAngle: .zero, endAngle: .pi * 2, clockwise: false)
-        
+
         path.move(to: CGPoint(x: outerRadius, y: 0))
-        
+
         path.addArc(center: .zero, radius: outerRadius, startAngle: .zero, endAngle: .pi * 2, clockwise: false)
 
         return path.applying(CGAffineTransform(translationX: center.x, y: center.y))
     }
 
 }
-

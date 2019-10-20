@@ -12,6 +12,7 @@ Morphi provides some additional [shapes](https://developer.apple.com/documentati
 - [x] `Triangle`
 - [x] `Parallelogram(topLeftAngle)`
 - [x] `Polygon(sides)`
+- [x] `RoundedPolygon(sides, cornerRadius)`
 - [x] `Heart`
 - [x] `Moon(angle)`
 - [x] `PlusSign(width)`

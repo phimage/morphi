@@ -66,6 +66,7 @@ struct ContentView : View {
                 ShapesView(name: "PlusSign", shapes: [PlusSign(width: 10), PlusSign(width: 30)])
                 ShapesView(name: "SuperEllipse", shapes: [SuperEllipse(), SuperEllipse(n: 1), SuperEllipse(n: 0.5)])
                 ShapesView(name: "Moon", fillColor: .yellow, shapes: [Moon(angle: Angle(degrees: 130)), Moon(angle: Angle(degrees: 90)), Moon(angle: Angle(degrees: 0))])
+                ShapesView(name: "RoundedPolygon", shapes: [RoundedPolygon(sides: 3, cornerRadius: 10), RoundedPolygon(sides: 5, cornerRadius: 10), RoundedPolygon(sides: 6, cornerRadius: 10)])
             }
             VStack {
                 ShapesView(name: "Circle", shapes: [Circle()])

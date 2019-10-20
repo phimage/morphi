@@ -11,10 +11,10 @@ import SwiftUI
 /// An ring centered on the frame of the view containing it.
 @available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
 public struct Gear: Shape {
-    
+
     /// The radius of the gear ring.
     public var radius: CGFloat
-    
+
     /// Number of cogs. Must be more than 2.
     public var cogs: Int
 
@@ -22,7 +22,7 @@ public struct Gear: Shape {
         self.radius = radius
         self.cogs = cogs
     }
-    
+
     /// Describes this shape as a path within a rectangular frame of reference.
     ///
     /// - Parameter rect: The frame of reference for describing this shape.
@@ -38,10 +38,10 @@ public struct Gear: Shape {
 
         let angle: Angle = .pi / Double(cogs)
         var radius = (outerRadius, innerRadius)
-        
+
         path.addArc(center: .zero, radius: innerRadius / 2, startAngle: .zero, endAngle: .pi * 2, clockwise: true)
         path.move(to: CGPoint(x: radius.0, y: 0))
-        
+
         for _ in 0..<cogs * 2 {
             path.addArc(center: .zero, radius: radius.0, startAngle: .zero, endAngle: -angle, clockwise: true)
             path = path.applying(CGAffineTransform(rotationAngle: CGFloat(angle.radians)))
@@ -50,6 +50,5 @@ public struct Gear: Shape {
 
         return path.applying(CGAffineTransform(translationX: center.x, y: center.y))
     }
-    
-}
 
+}

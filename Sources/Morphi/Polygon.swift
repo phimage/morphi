@@ -15,7 +15,7 @@ public struct Polygon: Shape {
     public let sides: Int
 
     /**
-     Create a star shape with provided points.
+     Create a polygon shape with provided number of sides.
      - Parameter sides: number of sides
      */
     public init(sides: Int) {
