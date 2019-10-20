@@ -5,6 +5,13 @@
 [![Language](http://img.shields.io/badge/language-swift-orange.svg?style=flat)](https://developer.apple.com/swift)
 [![Build Status](https://travis-ci.org/phimage/morphi.svg)](https://travis-ci.org/phimage/morphi)
 
+<a href="https://www.patreon.com/phimage">
+<img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron!" height="35">
+</a>
+<a href="https://paypal.me/ericphimage">
+<img src="https://buymecoffee.intm.org/img/button-paypal-white.png" alt="Buy me a coffee" height="35">
+</a>
+
 Morphi provides some additional [shapes](https://developer.apple.com/documentation/swiftui/shape) for SwiftUI.
 
 <img align="left" hspace="20" src="/Example/Screen.png" alt="Screen shot" height="333">
